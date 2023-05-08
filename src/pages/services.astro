@@ -7,8 +7,8 @@ import Layout from '../layouts/Layout.astro';
 
 
     <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
-		<p style="margin-right: 1rem;">Contact:</p>
-		<p style="margin-right: 1rem; -webkit-text-size-adjust: 17px;">yippietheproducer@gmail.com</p>
+		<p style="margin-right: 0.5rem;">Contact:</p>
+		<p style="margin-right: 0.5rem; -webkit-text-size-adjust: 17px;">yippietheproducer@gmail.com</p>
       <button style="background-color: #353535; white; border: none; padding: 0.5rem 1rem; border-radius: 5px;" onclick="copyToClipboard('yippietheproducer@gmail.com')">
         Copy
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
@@ -41,6 +41,7 @@ import Layout from '../layouts/Layout.astro';
 		display: flex;
 		align-items: center;
 		margin-top: 2rem;
+		size:auto;
 	}
 
 	.contact-text {
@@ -61,21 +62,4 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 
-	@media only screen and (max-width: 600px) {
-    main {
-      padding: 1rem;
-    }
-    h3 {
-      font-size: 1.2rem;
-    }
-    li {
-      font-size: 0.9rem;
-    }
-    .contact {
-      flex-direction: column;
-    }
-    .contact-button {
-      margin-top: 1rem;
-    }
-  }
 </style>
