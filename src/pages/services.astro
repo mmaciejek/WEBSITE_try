@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Services">
+  <main style="position: relative; padding-top: 50px; text-align: center; -webkit-text-fill-color: aliceblue;">
+
+
+    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+		<p style="margin-right: 1rem;">Contact:</p>
+		<p style="margin-right: 1rem; -webkit-text-size-adjust: 17px;">yippietheproducer@gmail.com</p>
+      <button style="background-color: #353535; white; border: none; padding: 0.5rem 1rem; border-radius: 5px;" onclick="copyToClipboard('yippietheproducer@gmail.com')">
+        Copy
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+          <path d="M13.5 2h-11a1.5 1.5 0 0 0-1.5 1.5v9a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5v-9a1.5 1.5 0 0 0-1.5-1.5zM5.5 3h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm4 2h-3v6h3V5zm-4-2a1.5 1.5 0 0 0-1.5 1.5v1h3v-1a1.5 1.5 0 0 0-1.5-1.5zm0 3a.5.5 0 0 1 .5.5v1h3v-1a.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-1a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+      </button>
+    </div>
+
+	
+    <ul style="line-height: 1.5; margin-bottom: 2rem;">
+		<h3 style=" font-size: 1.5rem; font-weight: bold; margin-bottom: 0rem;">What I offer:</h3>
+		<li>...</li>
+		<li>Mixing & Mastering</li>
+		<li>Vocal tuning</li>
+		<li>Use of modern, advanced plugins</li>
+		<li>Revitalizing lower-quality recordings with audio restoration techniques</li>
+		<li>Audio restoration to remove unwanted background noise</li>
+	  </ul>
+  </main>
+
+  <style>
+	main {
+	  margin: auto;
+	  padding: 1.5rem;
+	  min-height: calc(100vh - 90px);
+	  background: #515151;
+	}
+
+	.contact {
+		display: flex;
+		align-items: center;
+		margin-top: 2rem;
+	}
+
+	.contact-text {
+		color: rgb(7, 134, 245);
+		margin-right: 1rem;
+	}
+
+	.contact-button {
+		background: aliceblue;
+		border: none;
+		padding: 0.5rem 1rem;
+		color: #353535;
+		cursor: pointer;
+	}
+	.contact-button:hover{
+		
+		color: #b52b2b;
+	}
+</style>

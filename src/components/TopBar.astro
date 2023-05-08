@@ -1,0 +1,216 @@
+<nav class="top-bar">
+  <a href="/" class="logo" >Yippie The Producer</a>
+  <div class="nav-links">
+    <div class="dropdown">
+      <button class="dropbtn">What are you looking for? &#9660;</button>
+      
+      <div class="dropdown-beats">
+        <a href="/psychedelic"><i class="fas fa-yin-yang fa-icon"></i> Psychedelic</a>
+        <a href="/trap"><i class="fas fa-money-bill-wave fa-icon"></i> Trap</a>
+        <a href="/experimental"><i class="fas fa-flask fa-icon"></i> Experimental</a>
+        <a href="/dark"><i class="fas fa-skull fa-icon"></i> Dark</a>
+        <a href="/chill"><i class="fas fa-sun fa-icon"></i> Chill</a>
+        <a href="/alternative"><i class="fas fa-music fa-icon"></i> Alternative</a>
+        <a href="/hard"><i class="fas fa-fist-raised fa-icon"></i> Hard</a>
+        <a href="/sampled"><i class="fas fa-record-vinyl fa-icon"></i> Sampled</a>
+        <a href="/guitar"><i class="fas fa-guitar fa-icon"></i> Guitar</a>
+        <a href="/dance"><i class="fas fa-coffee fa-icon"></i> Dance</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Menu &#9660;</button>
+      <div class="dropdown-menu">
+        <a href="/about" class="font-black"><em>About me</em></a>
+        <a href="/music" class="inline-block px-4 py-2 bg-green-900 text-white font-bold rounded hover:bg-yellow-600 border-3 border-yellow-500"><em>Music</em></a>
+        <a href="/services" class="inline-block px-4 py-2 bg-yellow-800 text-white font-bold rounded hover:bg-yellow-600 border-3 border-yellow-500"><em>Mix & Master</em></a>
+        <a href="https://www.youtube.com/@YippieTheProducer/videos" target="_blank" class="font-thin"><em>Youtube</em></a>
+        <a href="https://www.instagram.com/yippie_the_producer/" target="_blank" class="font-thin"><em>Instagram</em></a>
+      </div>
+    </div>
+  </div>
+</nav>
+<style>
+
+a[href="/music"]{
+  
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+a[href="/services"]{
+  
+  color: #ffd000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+
+.fa-icon {
+  color: #555;
+}
+
+a:hover .fa-icon {
+  color: #fff;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  
+  height: 90px;
+  max-height: 90px;
+}
+
+.logo {
+  color: rgb(123, 123, 123);
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.toggle-menu {
+  display: block;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  right: 30px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right:20px;
+}
+
+.dropdown {
+  position: static;
+  margin: 0 1rem;
+}
+
+.dropbtn, .nav-link {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-beats{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #333;
+  min-width: 16.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin-right: 10px;
+  
+}
+.dropdown-menu {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: #333;
+  min-width: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin-right: 30px;
+  
+  
+}
+
+.dropdown-beats a, .dropdown-menu a {
+  color: white;
+  display:block;
+  text-align: left;
+  padding: 0.3rem;
+  text-decoration: none;
+  
+}
+
+.dropdown:hover .dropdown-beats, .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown:hover
+{
+  background-color: #555;
+}
+.dropdown-menu a:hover, .dropdown-beats a:hover{
+  background-color: #555;
+}
+
+
+.dropdown-beats a:hover,.dropdown-menu a:hover  {
+  background: linear-gradient(to bottom, #333333, #000000);
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .dropdown {
+    margin: auto;
+  }
+  
+  .dropdown-beats,
+    .dropdown-menu {
+      display: none;
+      position: relative;
+      margin: 0.5rem 0;
+      size:0.5rem;
+    }
+  
+
+  .logo {
+  color: rgb(123, 123, 123);
+  font-size: 0.7rem;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  font-weight:1000;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  height: 90px;
+  max-height: 90px;
+}
+
+.dropdown-beats,
+.dropdown-menu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #333;
+  padding: 0.1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  size-adjust: 0.5rem;
+  width: 100%;
+}
+.dropdown-beats a,
+.dropdown-menu a {
+  display: block;
+  padding: 0.7rem;
+  color: white;
+  text-decoration: none;
+}
+.dropdown-beats a:hover,
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+
+}
+

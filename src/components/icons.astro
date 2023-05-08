@@ -1,0 +1,42 @@
+<!-- Add Font Awesome stylesheet to your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<!-- Use Font Awesome icons in your HTML -->
+<div class="icons">
+  <a href="https://www.youtube.com/@YippieTheProducer/videos" target="_blank">
+    <i class="fab fa-youtube fa-lg"></i>
+  </a>
+  <a href="https://www.instagram.com/yippie_the_producer/" target="_blank">
+    <i class="fab fa-instagram fa-lg"></i>
+  </a>
+</div>
+
+<!-- Add CSS to position the icons -->
+<style>
+  .icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+    z-index: 9999;
+  }
+  
+  .icons a {
+    margin-top: 0.5rem;
+    color: #fff; /* Change color of icons if needed */
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .icons {
+      display: none;
+      margin: 0 1rem;
+    }
+    
+    .icons a {
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+  }
+</style>
