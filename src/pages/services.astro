@@ -59,4 +59,23 @@ import Layout from '../layouts/Layout.astro';
 		
 		color: #b52b2b;
 	}
+
+
+	@media only screen and (max-width: 600px) {
+    main {
+      padding: 1rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    li {
+      font-size: 0.9rem;
+    }
+    .contact {
+      flex-direction: column;
+    }
+    .contact-button {
+      margin-top: 1rem;
+    }
+  }
 </style>

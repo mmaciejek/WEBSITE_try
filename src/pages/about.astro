@@ -4,8 +4,8 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="About Yippie The Producer">
 	
-	<main style="position: relative; padding-top: 50px; text-align: center; -webkit-text-fill-color:white; font-weight: bold; text-size-adjust: 30px;">
-		<p class="position: relative; padding-top: 50px; text-align: center; -webkit-text-fill-color:white; font-weight: normal; text-size-adjust: 20px;">Poland based producer</p>
+	<main style="position: relative; padding-top: 50px; text-align: center; -webkit-text-fill-color:white; font-weight: bold; text-size-adjust: auto;">
+		<p class="position: relative; padding-top: 50px; text-align: center; -webkit-text-fill-color:white; font-weight: normal; text-size-adjust: auto;">Poland based producer</p>
 		<p>-</p>
 		<p>yippietheproducer@gmail.com</p>
 		<p>---</p>
@@ -19,11 +19,23 @@ import Layout from '../layouts/Layout.astro';
 
   <style>
 	main {
-	  margin: auto;
+	  margin: 0px;
 	  padding: 1.5rem;
-	  min-height: calc(100vh - 90px);
 	  background: #575757;
+	  height: 100%;
 	}
+	@media (max-width: 768px) { /* adjust max-width value as needed */
+  .text-white {
+	margin:0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 80%;
+	background: #575757;
+	height: 100%;
+  }
+}
 
 	
   </style>
