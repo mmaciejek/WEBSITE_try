@@ -35,14 +35,17 @@ import Icons from '../components/icons.astro';
 	html {
 		font-family: system-ui, sans-serif;
 		background-color: #F6F6F6;
-		height: 80%;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 
-
+	@media only screen and (max-width: 768px) {
+	  head {
+		height: 87%;
+	  }
+	}
 
 </style>
 
