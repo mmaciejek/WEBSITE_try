@@ -43,7 +43,11 @@ min-height: -webkit-fill-available;
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 
-
+	@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        margin-bottom: 90px;
+    }
+}
 
 </style>
 
