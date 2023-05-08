@@ -150,7 +150,11 @@ a:hover .fa-icon {
 .dropdown-beats a:hover,.dropdown-menu a:hover  {
   background: linear-gradient(to bottom, #333333, #000000);
 }
-
+/* Hide menu on blur */
+.dropdown-menu:focus-within,
+.dropdown-beats:focus-within {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -208,7 +212,11 @@ a:hover .fa-icon {
 .dropdown-menu a:hover {
   background-color: #555;
 }
-
+/* Hide menu on blur */
+.dropdown-menu:focus-within,
+.dropdown-beats:focus-within {
+  display: none;
+}
 }
 
 </style>
