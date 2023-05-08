@@ -17,5 +17,10 @@ import Layout from '../layouts/Layout.astro';
 	  min-height: calc(100vh - 90px);
 	  background: #000;
 	}
+	@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        /* Safari-specific CSS here */
+    }
+}
   </style>
   
