@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Sampled Beats">
 	
 	<main style="position: relative; padding-top: 50px;">
-		<iframe src="https://player.beatstars.com/?storeId=138385" width="100%" height="100%" style="position: absolute; top: 0; left: 0; height: 100%; margin-top: 0px;"></iframe>
+		<iframe src="https://player.beatstars.com/?storeId=138385" width="100%" height="80%" style="position: absolute; top: 0; left: 0;  margin-top: 0px;"></iframe>
 		<ul role="list" class="link-card-grid"></ul>
 	  </main>
   </Layout>
@@ -15,6 +15,13 @@ import Layout from '../layouts/Layout.astro';
 	  margin: auto;
 	  padding: 1.5rem;
 	  min-height: calc(100vh - 90px);
+	}
+
+	
+	@media only screen and (max-width: 768px) {
+	  iframe {
+		height: 87%;
+	  }
 	}
   </style>
   
